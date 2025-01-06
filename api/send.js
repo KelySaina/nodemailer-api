@@ -38,11 +38,12 @@ module.exports = async (req, res) => {
     const info = await transporter.sendMail(mailOptions);
 
     res.status(200).json({
+      isOK: true,
       message: "Email sent successfully",
       messageId: info.messageId,
     });
   } catch (error) {
     console.error("Error sending email:", error);
-    res.status(500).json({ error: "Failed to send email" });
+    res.status(500).json({ isOK: false, error: "Failed to send email" });
   }
 };
