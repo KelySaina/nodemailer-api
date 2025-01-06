@@ -5,7 +5,7 @@ const sendEmail = async (req, res) => {
   const { to, subject, message } = req.body;
 
   // Validate input
-  const validation = validateEmailPayload(subject, message);
+  const validation = validateEmailPayload(to, subject, message);
   if (!validation.isValid) {
     return res.status(400).json({
       error: "Validation failed",
