@@ -1,5 +1,5 @@
 const nodemailer = require("nodemailer");
-const { validateEmailPayload } = require("../src/utils/validators");
+const { validateEmailPayload } = require("../utils/validators");
 
 module.exports = async (req, res) => {
   if (req.method !== "POST") {
