@@ -30,7 +30,7 @@ module.exports = async (req, res) => {
 
     const mailOptions = {
       from: to,
-      to: process.env.RECIPIENT_EMAIL,
+      to: to,
       subject,
       text: message,
     };
