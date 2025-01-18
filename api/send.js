@@ -91,7 +91,6 @@ module.exports = async (req, res) => {
     </div>
     <div class="body">
       <p><span class="highlight">Sender:</span> <strong>${from}</strong></p>
-      <p><span class="highlight">Message:</span></p>
       <p class="highlight">${message}</p>
     </div>
     <div class="footer">
