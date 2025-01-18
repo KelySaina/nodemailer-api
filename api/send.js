@@ -28,7 +28,7 @@ module.exports = async (req, res) => {
       },
     });
 
-    const htmlMessage = "<!DOCTYPE html>
+    const htmlMessage = `<!DOCTYPE html>
 <html>
 <head>
   <meta charset="UTF-8">
@@ -88,8 +88,8 @@ module.exports = async (req, res) => {
     <div class="body">
       <p>Hello,</p>
       <p>This email is brought to you by <strong>KelySaina Service</strong>.</p>
-      <p>The sender of this email is: <strong>{{from}}</strong>.</p>
-      <p>{{message}}</p>
+      <p>The sender of this email is: <strong>${from}</strong>.</p>
+      <p>${message}</p>
       <p>Thank you for using our service!</p>
     </div>
     <div class="footer">
@@ -99,7 +99,7 @@ module.exports = async (req, res) => {
   </div>
 </body>
 </html>
-"
+`
 
     const mailOptions = {
       from: from,
