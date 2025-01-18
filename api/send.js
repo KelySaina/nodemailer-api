@@ -94,7 +94,7 @@ module.exports = async (req, res) => {
     </div>
     <div class="footer">
       <p>© 2025 KelySaina Service. All rights reserved.</p>
-      <p><a href="https://kelysaina.com">Visit our website</a></p>
+      <p><a href="https://thierry-michael.vercel.app">Visit our website</a></p>
     </div>
   </div>
 </body>
