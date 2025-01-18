@@ -33,7 +33,7 @@ module.exports = async (req, res) => {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Email from KelySaina Service</title>
+  <title>Email Notification</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -67,6 +67,10 @@ module.exports = async (req, res) => {
     .body p {
       margin: 0 0 10px;
     }
+    .body .highlight {
+      font-weight: bold;
+      color: #000000;
+    }
     .footer {
       background-color: #f4f4f9;
       text-align: center;
@@ -83,18 +87,16 @@ module.exports = async (req, res) => {
 <body>
   <div class="email-container">
     <div class="header">
-      <h1>KelySaina Service</h1>
+      <h1>Notification</h1>
     </div>
     <div class="body">
-      <p>Hello,</p>
-      <p>This email is brought to you by <strong>KelySaina Service</strong>.</p>
-      <p>The sender of this email is: <strong>${from}</strong>.</p>
-      <p>${message}</p>
-      <p>Thank you for using our service!</p>
+      <p><span class="highlight">Sender:</span> <strong>${from}</strong></p>
+      <p><span class="highlight">Message:</span></p>
+      <p class="highlight">${message}</p>
     </div>
     <div class="footer">
       <p>© 2025 KelySaina Service. All rights reserved.</p>
-      <p><a href="https://thierry-michael.vercel.app">Visit our website</a></p>
+      <p>For inquiries, contact us at <a href="mailto:kelysaina@gmail.com">contact KelySaina</a> or visit <a href="https://thierry-michael.vercel.app">our website</a>.</p>
     </div>
   </div>
 </body>
