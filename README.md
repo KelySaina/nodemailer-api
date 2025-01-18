@@ -6,7 +6,7 @@
 
 ### Request URL
 ```
-https://your-deployment-url.com/api/send
+https://ks-mailer.vercel.app/api/send
 ```
 
 ---
@@ -85,7 +85,7 @@ The email body includes:
 Run the following `cURL` command to test the API:
 
 ```bash
-curl -X POST https://your-deployment-url.com/api/send \
+curl -X POST https://ks-mailer.vercel.app/api/send \
 -H "Content-Type: application/json" \
 -d '{
   "from": "sender@example.com",
@@ -98,7 +98,7 @@ curl -X POST https://your-deployment-url.com/api/send \
 ### Postman
 1. Open Postman and create a new request.
 2. Set the method to `POST`.
-3. Use the API URL: `https://your-deployment-url.com/api/send`.
+3. Use the API URL: `[https://your-deployment-url.com/api/send](https://ks-mailer.vercel.app/api/send)`.
 4. Add the following headers:
    - `Content-Type`: `application/json`
 5. Provide the request body in JSON format (as shown above).
